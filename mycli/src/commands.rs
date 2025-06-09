@@ -13,7 +13,7 @@ impl Command {
             match args[1].as_str() {
                 "hello" => Command::Hello(args[2].clone()),
                 "bye" => Command::Bye,
-                "ask" => Command::Ask(args.get(2).clone().cloned()),
+                "ask" => Command::Ask(args.get(2).cloned()),
                 _ => Command::None,
             }
         }

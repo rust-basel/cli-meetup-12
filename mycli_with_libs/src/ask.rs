@@ -13,9 +13,8 @@ pub fn run(maybe_text: Option<String>) {
 }
 
 fn wait_for_users() -> String {
-    let description = Text::new("What is your name?")
+    Text::new("What is your name?")
         .with_help_message("Well you know your name right?")
         .prompt()
-        .unwrap_or_default();
-    description
+        .unwrap_or_default()
 }

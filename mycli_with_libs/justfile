@@ -1,6 +1,6 @@
 
 
-@verify: test lint
+verify: test lint
 
 # Run tests
 test:

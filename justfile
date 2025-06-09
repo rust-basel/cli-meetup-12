@@ -10,7 +10,7 @@ sh-test project:
 sh-tests: (sh-test "mycli") (sh-test "mycli_with_libs")
 
 
-@verify:
+verify:
     cd mycli && just verify
     cd mycli_with_libs && just verify
     just sh-tests
