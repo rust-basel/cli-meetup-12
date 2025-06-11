@@ -194,7 +194,7 @@
 #slide[
   = The lesson
   
-  - Start always with this as your first code
+  - Start with this as your starting point and not examples from libs
   
 ]
 
@@ -250,4 +250,23 @@ Use the tools rust gives you
 https://doc.rust-lang.org/book/ch12-00-an-io-project.html
 
 ]
+
+
+#new-section[Fourth Lesson]
+
+#slide[
+  = The lesson
+  
+  - Demo
+  
+]
+
+#slide[
+  = If you need to have serious interaction with the terminal 
+
+- https://github.com/rust-unofficial/awesome-rust?tab=readme-ov-file#command-line
+
+]
+
+
 
