@@ -34,6 +34,11 @@
 ]
 
 #slide[
+    #show: focus
+    #rect(fill:white, width: 100%, height: 100%)[#image("images/eh-logo.svg", width: 80%)]
+]
+
+#slide[
   = About Rust-Basel
 
     - Non-profit swiss association
@@ -54,16 +59,11 @@
 #slide[
     #show: focus
     #text(size: 0.8em)[
-    Pizza-Order
+    Pizza
     ] \
     #text(size: 0.5em)[
-    https://dieci.ch
+    From Vito
     ]
-]
-
-#slide[
-    #show: focus
-    #rect(fill:white, width: 100%, height: 100%)[#image("images/eh-logo.svg", width: 80%)]
 ]
 
 
@@ -110,9 +110,17 @@
 ]
 
 #slide[
+  = Wikipedia
+
+   A command-line interface (CLI) is a means of interacting with software via commands – each formatted as a line of text. 
+  
+]
+
+
+#slide[
   = Let us try
 
-  Anything that we drive via the command line
+  Anything that we can drive via the command line
   
 ]
 
@@ -140,7 +148,7 @@
 ]
 
 #slide[
-  = The (non-Rust) lesson
+  = The (non-Rust) lesson (experience)
   
   - Think about the problem
   - Sketch it out quickly
@@ -192,9 +200,9 @@
 ]
 
 #slide[
-  = The lesson
+  = The lesson (opinion)
   
-  - Start always with this as your first code
+  - If you goal is learning, start always with this as your first code
   
 ]
 
@@ -214,7 +222,7 @@ fn main() {
 ]
 
 #slide[
-  = CLI Arguments
+  = Install in local
   
 ```bash
     cargo install --path .
@@ -222,7 +230,7 @@ fn main() {
 ]
 
 #slide[
-  = CLI Arguments
+  = Install in local
   
 ```bash
     mycli
@@ -230,7 +238,7 @@ fn main() {
 ]
 
 #slide[
-  = CLI Arguments
+  = little trick for local development
   
 ```bash
     cargo run -- <args>
@@ -249,5 +257,62 @@ Use the tools rust gives you
   
 https://doc.rust-lang.org/book/ch12-00-an-io-project.html
 
+]
+
+#new-section[Fourth Lesson]
+
+#slide[
+  = Simple CLI Structure
+  
+i -> l -> o 
+
+input -> logic -> output
+
+]
+
+#slide[
+  = Simple error handling
+  
+i || e -> l || e -> o || e 
+
+e -> o
+
+error -> output
+
+]
+
+#slide[
+  = error collecting
+  
+i && e -> l && e -> o && e 
+
+if e -> o
+
+]
+
+#slide[
+  = collecting error/warnings
+  
+  - Small white board session and demo
+  - https://github.com/LunchTimeCode/amisane
+  
+]
+
+#slide[
+  = CLI Structure in rust
+  
+  - Small white board session and demo
+  - Demo mycli
+  
+]
+
+
+#slide[
+  = The lesson (experience)
+  
+  - Do not share logic
+  - Share the output to not break the api
+  - Share the input code to not break the api
+  
 ]
 
